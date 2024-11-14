@@ -1,0 +1,81 @@
+*{
+    font-family: sans-serif;
+    color: hsl(278, 68%, 11%);
+    font-weight: 600;
+    font-size: 14px;
+}
+.mobile{
+    width: 355px;
+    position: absolute;
+    left: 40%;
+    height: 650px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: -20px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.background{
+    z-index: 0;
+    position: relative;
+    left: -10px;
+}
+.card-back{
+    position: absolute;
+    transform: scale(0.6);
+    display: flex;
+    top: 20px;
+    z-index: 1;
+}
+.card-front{
+    position: absolute;
+    transform: scale(0.6);
+    top: 80px;
+    left: -70px;
+    z-index: 2;
+}
+p{
+    margin-left: 10px;
+}
+input{
+    width: 340px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.submit{
+    margin-left: 13px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    position: relative;
+}
+#expdate{
+    width: 170px;
+}
+#CVC{
+    width: 100px;
+    margin-left: 25px;
+}
+.icon{
+    position: relative;
+    left: 40%;
+}
+h1{
+    font-size: 24px;
+    left: 34%;
+    position: relative;
+}
+.completedetails{
+    color: #8e8593 ;
+    left: 25%;
+    font-size: 17px;
+    position: relative;
+}
+button{
+    width: 200px;
+    padding: 8px;
+    margin-left: 80px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+}

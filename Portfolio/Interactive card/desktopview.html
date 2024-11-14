@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive card</title>
+    <link rel="stylesheet" href="desktopview.css">
+</head>
+<body>
+    <div class="desktop">
+        <div class="background"></div> 
+        <div class="card-front"><img src="bg-card-front.png" alt="May be a card image">
+        <div id="cardlogo"><img src="card-logo.svg" alt=""></div>
+        <div id="cardnumber">0000 0000 0000 0000</div>
+        <div id="cardholder">JANE APPLESEED</div>
+        <div id="expdate">00/00</div>
+        </div>
+        <div class="card-back"><img src="bg-card-back.png" alt="May be a card image">
+        <div id="cvc">000</div>
+    </div>     
+        <form action="">
+            <p>CARDHOLDER NAME</p>
+           <p><input type="text" placeholder="e.g Jane Appleseed" name="CARDHOLDER NAME" id="" required="name"></p>
+           <p>CARD NUMBER</p>
+           <p><input type="text" name="CARD NUMBER" id="" maxlength="16" placeholder=" e.g. 1234 5678 9123 0000" required="number"></p>
+           <pre> Exp. Date (MM/YY)     CVC</pre>
+           <pre><input type="month" name="" id="" placeholder="" style="width: 150px;" required="month">   <input type="text" name="CVC" id="CVC" placeholder=" e.g 123" style="width: 80px;" required="number" maxlength="3"></pre>
+           <button> <a href="desktopcomp.html">Confirm</a></button>
+        </form>
+    </div>
+</body>
+</html>

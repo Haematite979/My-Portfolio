@@ -1,11 +1,11 @@
 *{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     color: #ffff;
     cursor: default;
 
 }
 body{
-    background: #fdf0d5;
+    background: #2a9d8f;
 	overflow-x: hidden;
 }
  nav{
@@ -17,34 +17,39 @@ body{
     margin-top: -8px;
     padding: 5px 0px;
     z-index: 100;
-    background-color: #e9c46a;
+    background-color: #022b31;
 }
 .nav-logo{
     margin-left: 20px;
     border-radius: 50%;
 }
 nav ul{
-    float: left;
+    float: right;
     display: block;
-    position: absolute;
-    right: 40px;
-    top: 0px;
+    margin-right: 40px;
 }
 nav ul li {
-    float: left;
-    display: block;
+    display: inline;
     list-style-type:none;
     text-decoration: none;
     padding: 0px 10px;
     font-weight: 700;
+    width: auto;
+    height: auto;
+    text-align: center;
+    border-radius: 3px;
+    font-variant: small-caps;
 }
-li a{
+nav ul li a{
     text-decoration: none;
     color: #ffff;
+}
+nav ul li:hover {
+    background-color: #2a9d8f;
+    width: 80px;
 
 }
-
-a:active{
+nav ul li a:active{
     color: aqua;
 }
 .first{
@@ -140,12 +145,12 @@ a:active{
     left: 80px;
     width: 300px;
     height: 100px;
-    border-right: 2px solid #e9c46a;
+    border-right: 2px solid #022b31;
     text-align: center; 
-    color: #e9c46a;
+    color: #022b31;
 }
 .box1 h2{
-    color: #e9c46a;
+    color: #022b31;
 }
 .box2{
     left: 390px;
@@ -161,11 +166,11 @@ a:active{
     height: 380px;
     width: 350px;
     padding-left: 40px;
-    background-color: #e9c46a;
+    background-color: #022b31;
     border-radius: 0px 0px 10px 10px;
 }
 .third *{
-    background: #e9c46a;
+    background: #022b31;
     border-radius: 10px 0px;
 }
 .About span{
@@ -177,6 +182,9 @@ a:active{
     border: none;
     border-radius: 5px;
     margin-top: 20px;
+}
+.third button:active{
+    background-color: #022b31;
 }
 .third1{
     height: 150px;
@@ -191,7 +199,7 @@ a:active{
    opacity: 0.8;
 }
 .third1 h3{
-    color: black;
+    color: white;
     margin-top: 30px;
 }
 .third1 h5{
@@ -216,16 +224,17 @@ a:active{
 }
 .fourth h2{
     color: black;
+    text-decoration: underline;
 }
 .fourth span{
-    color: #e9c46a;
+    color: #022b31;
 }
 .fourth img{
     height: 300px;
     max-width: 400px;
     max-height: 380px;
     margin-right: 10px;
-    border-top: 2px solid #f9a101;
+    border-top: 2px solid #022b31;
     border-radius: 5px;
 }
 .fourth img:hover{
@@ -244,8 +253,8 @@ a:active{
     
 }
 .Fifth span{
-    color: #f9a101;
-    border-bottom: 2px solid black;
+    color: #022b31;
+    text-decoration: underline;
 }
 .Fifth h2 {
     color: black;
@@ -261,11 +270,13 @@ a:active{
     padding: 0px 20px;
     padding-right: 50px;
     color: white;
-    background-color: #e9c46a;
+    background-color: #022b31;
     border-radius: 10px 0px;
+    text-align: justify;
+
 }
 .Review1 h3{
-    color: black;
+    color: white;
 }
 .Review1 img{
     position: absolute;
@@ -298,10 +309,9 @@ a:active{
 .footerbox{
     width: 1250px;
     height: 200px;
-    background-color: #e9c46a;
+    background-color: #022b31;
     padding: 10px;
     border-radius: 20px 0px;
-    margin-left: 0px;
 }
 .footerbox h2{
     text-align: center;
@@ -311,8 +321,8 @@ a:active{
 }
 .footer button{
     padding: 8px 40px;
-    border: 1px solid white;
     border-radius: 3px;
+    border: 2px outset;
     background: transparent ;
     align-items: center;
     margin-left: 42%;
@@ -321,10 +331,27 @@ a:active{
     pointer-events: visibleStroke;
 }
 .footer button:hover{
-    color: #e9c46a;
+    color: #022b31;
     background-color: #2a9d8f;
-    border: none;
+    border:2px inset;
 }
+.footer button:active{
+    background-color: green;
+    animation-name: shake;
+    animation-duration: 0.1s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease;
+}
+@keyframes shake {
+    0%{}
+    20%{transform: translateX(-10px);}
+    40%{transform: translateX(10px);}
+    60%{transform: translateX(-10px);}
+    80%{transform: translateX(10px);}
+    100%{}
+     
+ }
+ 
 .footer ol{
     position: absolute;
     top: 200px;
@@ -353,7 +380,7 @@ a:active{
 .contact{
     width: 1250px;
     height: 200px;
-    background-color: #2a9d8f;
+    background-color: #022b31;
     padding: 10px;
     right: 120px;
     top: 300px;
@@ -370,15 +397,17 @@ a:active{
     padding: 10px;
     border-radius: 5px;
     border: none;
+    color: #022b31;
+    cursor: text;
 }
 .contact .submit-button{
     padding: 10px;
     width: 100px;
-    background-color: #022b31;
+    background-color: #2a9d8f;
     border: none;
     border-radius: 4px;
     margin-left: 2px;
-    color: #2a9d8f;
+    color: #022b31;
 }
 
 /* .footer img{
@@ -391,7 +420,7 @@ a:active{
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background-color: #022b31;
+    background-color: #2a9d8f;
 }
 .socials2{
     position: absolute;
@@ -400,7 +429,7 @@ a:active{
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background-color: #022b31;
+    background-color: #2a9d8f;
 }
 .socials3{
     position: absolute;
@@ -409,7 +438,7 @@ a:active{
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background-color: #022b31;
+    background-color: #2a9d8f;
 }
 .socials4{
     position: absolute;
@@ -418,7 +447,7 @@ a:active{
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background-color: #022b31;
+    background-color: #2a9d8f;
 }
 /* Animations */
 @keyframes swirl {
@@ -449,12 +478,14 @@ a:active{
     100%{ opacity: 1;}
 }
 @keyframes slide {
-    0%{ visibility: hidden; left: -260px;}
+    0%{ visibility: hidden; top: -260px;}
+    50%{ top: -50px ;}
+    
     100%{ visibility: visible; }
 }
 
 
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:375px) {
     *{
         font-size: 15px;
     }
@@ -464,7 +495,7 @@ a:active{
         right: 20px;
     }
     .edge1{
-        left: 225px;
+        left: 288px;
         top: 40px;
         transform: scale(0.7);
     }
@@ -509,6 +540,7 @@ a:active{
         height: 200px;
         padding-left: 20px;
         border: none;
+        margin-left: 30px;
         
     }
     .third button{
@@ -520,20 +552,21 @@ a:active{
         font-weight: 700;
     }
     .third1{
-        left: 0px;
         top: 210px;
         width: 280px;
         font-size: 15px;
+        margin-left: -445px;
+        position: absolute;
     }
     .third2{
-        top: 370px;
+        top: 380px;
     }
     .third3{
-        top: 530px;
+        top: 540px;
     }
     .fourth{
         left: 0px;
-        top: 1070px;
+        top: 1000px;
         width: 10000px;
         text-align: left;
         overflow-x: scroll;
@@ -543,6 +576,7 @@ a:active{
         height: 600px;
         text-align: left;
         padding-left: 5px;
+        margin-left: 30px;
         top: 1500px ;
     }
     .Fifth h2{
@@ -563,65 +597,71 @@ a:active{
         left: 240px;
     }
     .Review2{
-        top: 200px;
+        top: 240px;
     }
     .Review3{
-        top: 400px;
+        top: 500px;
         left: 10px;
     }
     .footerbox{
         margin-left: -100px;
-        width: 300px;
+        width: 375px;
         margin: 0;
         border-radius: 0px;
     }
     .footerbox button{
-        margin-left: 100px;
+        margin-left: 130px;
         padding: 2px 5px;
         font-size: 12px;
     }
     .footer{
-        top: 2160px;
+        top: 2360px;
         padding: 0;
         left: 15px;
     }
     .footer img{
-        left: 70px;
+        left: 110px;
         transform: scale(0.6);
         margin-bottom: 10px;
     }
+    .footer ol{
+        display: none;
+    }
     .contact{
         top: 230px;
-        width: 310px;
-        right: 0px;
+        width: 375px;
+        left: 0px;
         height: 150px;
+        display: block;
     }
     .contact .email{
         width: 290px;
-        margin-left: 3px;
+        margin-left: 20px;
         display: block;
         padding: 5px;
         margin-top: 30px;
+        font-size: 13px;
     }
     .contact .submit-button{
-        margin-left: 100px;
+        margin-left: 120px;
         margin-top: 10px;
         padding: 5px;
+        font-size: 13px;
     }
     .socials1{
         bottom: 10px;
-        left: 80px;
+        left: 100px;
     }
     .socials2{
         bottom: 10px;
-        left: 120px;
+        left: 140px;
     }
     .socials3{
         bottom: 10px;
-        left: 160px;
+        left: 180px;
     }
     .socials4{
         bottom: 10px;
-        left: 200px;
+        left: 220px;
     }
 }
